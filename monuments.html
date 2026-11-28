@@ -36,4 +36,4 @@ function show(){if(!ready||answered)return;stop();answered=true;n=16;for(const t
 function next(){if(idx<data.length-1){idx++;load()}else if(confirm('Adventure complete! Play again?')){idx=0;load()}}
 function full(){if(document.fullscreenElement)document.exitFullscreen?.();else if(document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(()=>{});else alert('On iPhone, rotate to landscape for a larger view.')}
 document.addEventListener('keydown',e=>{if(e.target.tagName==='BUTTON'&&e.key===' ')return;const k=e.key.toLowerCase();if(k===' '){e.preventDefault();toggle()}if(k==='r')step();if(k==='a')show();if(k==='n')next();if(k==='f')full()});load();
-</script><script src="party-music.js"></script></body></html>
+</script><script src="party-music.js?v=9"></script></body></html>
